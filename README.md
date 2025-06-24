@@ -21,11 +21,8 @@ khachhang:
 +id
 +ten
 +sodienthoai
-+hangthanhvien
--phuongthuc:
-+dathang
-+thanhtoan
-+tichdiem
+
+
 
 nhanvien:
 
@@ -34,10 +31,6 @@ nhanvien:
 +ten
 +vaitro
 +calam
--chucnang:
-+nhanorder
-+phucvu
-+baocao
 
 sanpham
 
@@ -47,9 +40,7 @@ sanpham
 +gia
 +loai
 +tonkho
--chucnang:
-+capnhatgia
-+kiemtrasoluong
+
 
 donhang
 
@@ -59,11 +50,16 @@ donhang
 +sanpham
 +trangthai
 +tongtien
--chucnang:
-+themmom
-+tinhtien
-+capnhattrangthai
+
 
 thanhtoan
++donhang
++tongtien
++trangthaitahnhtoan
 
+main
++khachhang
++nhanvien
++sanpham
++donhang
 
