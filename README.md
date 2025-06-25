@@ -9,9 +9,7 @@ nhanvien
 sanpham
 donhang
 thanhtoan
-ban
-danhgia
-baocao
+main
 
 # Miêu tả đối tượng
 
