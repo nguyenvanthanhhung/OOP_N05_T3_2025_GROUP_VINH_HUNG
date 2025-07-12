@@ -1,13 +1,36 @@
 public class NhanVien {
-    String id;
-    String ten;
-    String vaiTro;
-    String caLam;
+    private String id;
+    private String ten;
+    private String vaiTro;
+    private String caLam;
 
     public NhanVien(String id, String ten, String vaiTro, String caLam) {
         this.id = id;
         this.ten = ten;
         this.vaiTro = vaiTro;
+        this.caLam = caLam;
+    }
+
+    public String getId() {
+        return id;
+    }
+    public String getTen() {
+        return ten;
+    }
+    public String getVaiTro() {
+        return vaiTro;
+    }
+    public String getCaLam() {
+        return caLam;
+    }
+
+    public void setTen(String ten) {
+        this.ten = ten;
+    }
+    public void setVaiTro(String vaiTro) {
+        this.vaiTro = vaiTro;
+    }
+    public void setCaLam(String caLam) {
         this.caLam = caLam;
     }
 
@@ -17,34 +40,5 @@ public class NhanVien {
         System.out.println("Ten     : " + ten);
         System.out.println("Vai tro : " + vaiTro);
         System.out.println("Ca lam  : " + caLam);
-        System.out.println("===========================");
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public String getVaiTro() {
-        return vaiTro;
-    }
-
-    public String getCaLam() {
-        return caLam;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
-    }
-
-    public void setVaiTro(String vaiTro) {
-        this.vaiTro = vaiTro;
-    }
-
-    public void setCaLam(String caLam) {
-        this.caLam = caLam;
     }
 }
