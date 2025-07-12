@@ -1,16 +1,16 @@
 public class SanPham {
-    String id;
-    String ten;
-    double gia;
-    String loai;
-    int tonKho;
+    private String id;
+    private String ten;
+    private double gia;
+    private String loai;
+    private int tonKho;
 
     public SanPham(String id, String ten, double gia, String loai, int tonKho) {
         this.id = id;
         this.ten = ten;
-        this.gia = gia;
+        this.setGia(gia);
         this.loai = loai;
-        this.tonKho = tonKho;
+        this.setTonKho(tonKho);
     }
 
     public void hienThi() {
@@ -48,7 +48,11 @@ public class SanPham {
     }
 
     public void setGia(double gia) {
-        this.gia = gia;
+        if (gia >= 0) {
+            this.gia = gia;
+        } else {
+            System.out.println("Loi: Gia phai lon hon hoac bang 0.");
+        }
     }
 
     public void setLoai(String loai) {
@@ -56,6 +60,21 @@ public class SanPham {
     }
 
     public void setTonKho(int tonKho) {
-        this.tonKho = tonKho;
+        if (tonKho >= 0) {
+            this.tonKho = tonKho;
+        } else {
+            System.out.println("Loi: Ton kho phai lon hon hoac bang 0.");
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "SanPham{" +
+                "id='" + id + '\'' +
+                ", ten='" + ten + '\'' +
+                ", gia=" + gia +
+                ", loai='" + loai + '\'' +
+                ", tonKho=" + tonKho +
+                '}';
     }
 }
