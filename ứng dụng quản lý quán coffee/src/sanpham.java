@@ -13,7 +13,6 @@ public class SanPham {
         this.tonKho = tonKho;
     }
 
-    // Phuong thuc hien thi thong tin san pham
     public void hienThi() {
         System.out.println("=== THONG TIN SAN PHAM ===");
         System.out.println("ID       : " + id);
@@ -21,5 +20,42 @@ public class SanPham {
         System.out.println("Gia      : " + gia + " VND");
         System.out.println("Loai     : " + loai);
         System.out.println("Ton kho  : " + tonKho);
+        System.out.println("===========================");
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public double getGia() {
+        return gia;
+    }
+
+    public String getLoai() {
+        return loai;
+    }
+
+    public int getTonKho() {
+        return tonKho;
+    }
+
+    public void setTen(String ten) {
+        this.ten = ten;
+    }
+
+    public void setGia(double gia) {
+        this.gia = gia;
+    }
+
+    public void setLoai(String loai) {
+        this.loai = loai;
+    }
+
+    public void setTonKho(int tonKho) {
+        this.tonKho = tonKho;
     }
 }
