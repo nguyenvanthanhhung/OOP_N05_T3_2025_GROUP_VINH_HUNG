@@ -10,6 +10,6 @@ public class KhachHang {
     }
 
     public void hienThi() {
-        System.out.println("Khách hàng: " + ten + " - SDT: " + soDienThoai);
+        System.out.println("Khach hang: " + ten + " - SDT: " + soDienThoai);
     }
 }
