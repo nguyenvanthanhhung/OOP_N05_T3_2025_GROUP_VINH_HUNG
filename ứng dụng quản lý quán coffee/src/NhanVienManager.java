@@ -1,70 +1,70 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class NhanVienManager {
-    private List<NhanVien> danhSachNhanVien = new ArrayList<>();
-    private Scanner scanner = new Scanner(System.in);
+    List<NhanVien> ds = new ArrayList<>();
+    Scanner sc = new Scanner(System.in);
 
-    public void themNhanVien() {
-        System.out.print("Nhap ID: ");
-        String id = scanner.nextLine();
-        System.out.print("Nhap ten: ");
-        String ten = scanner.nextLine();
-        System.out.print("Nhap vai tro: ");
-        String vaiTro = scanner.nextLine();
-        System.out.print("Nhap ca lam: ");
-        String caLam = scanner.nextLine();
-
-        NhanVien nv = new NhanVien(id, ten, vaiTro, caLam);
-        danhSachNhanVien.add(nv);
-        System.out.println("Them nhan vien thanh cong!");
+    void them() {
+        System.out.print("ID: "); String id = sc.nextLine();
+        System.out.print("Ten: "); String ten = sc.nextLine();
+        System.out.print("Vai tro: "); String vt = sc.nextLine();
+        System.out.print("Ca: "); String ca = sc.nextLine();
+        ds.add(new NhanVien(id, ten, vt, ca));
     }
 
-    public void hienThiTatCa() {
-        if (danhSachNhanVien.isEmpty()) {
-            System.out.println("Danh sach nhan vien rong.");
+    void hienThi() {
+        if (ds.isEmpty()) {
+            System.out.println("Danh sach rong.");
             return;
         }
-        for (NhanVien nv : danhSachNhanVien) {
-            nv.hienThi();
-        }
+        for (NhanVien nv : ds) nv.hienThi();
     }
 
-    public void suaNhanVien() {
-        System.out.print("Nhap ID nhan vien can sua: ");
-        String id = scanner.nextLine();
-        for (NhanVien nv : danhSachNhanVien) {
-            if (nv.getId().equals(id)) {
-                System.out.print("Nhap ten moi: ");
-                nv.setTen(scanner.nextLine());
-                System.out.print("Nhap vai tro moi: ");
-                nv.setVaiTro(scanner.nextLine());
-                System.out.print("Nhap ca lam moi: ");
-                nv.setCaLam(scanner.nextLine());
-                System.out.println("Sua nhan vien thanh cong!");
+    void sua() {
+        System.out.print("Nhap ID can sua: ");
+        String id = sc.nextLine();
+        for (NhanVien nv : ds) {
+            if (nv.id.equals(id)) {
+                System.out.print("Ten moi: "); nv.ten = sc.nextLine();
+                System.out.print("Vai tro moi: "); nv.vaiTro = sc.nextLine();
+                System.out.print("Ca moi: "); nv.ca = sc.nextLine();
                 return;
             }
         }
-        System.out.println("Khong tim thay nhan vien voi ID nay.");
+        System.out.println("Khong tim thay.");
     }
 
-    public void xoaNhanVien() {
-        System.out.print("Nhap ID nhan vien can xoa: ");
-        String id = scanner.nextLine();
-        NhanVien nvXoa = null;
-        for (NhanVien nv : danhSachNhanVien) {
-            if (nv.getId().equals(id)) {
-                nvXoa = nv;
-                break;
+    void xoa() {
+        System.out.print("Nhap ID can xoa: ");
+        String id = sc.nextLine();
+        ds.removeIf(nv -> nv.id.equals(id));
+    }
+
+    void test() {
+        ds.add(new NhanVien("NV01", "An", "Bao ve", "Sang"));
+        ds.add(new NhanVien("NV02", "Binh", "Thu ngan", "Toi"));
+        ds.add(new NhanVien("NV03", "Chi", "Ke toan", "Chieu"));
+        System.out.println("== DANH SACH TEST ==");
+        hienThi();
+        System.out.println("== SUA NV02 ==");
+        suaTest("NV02", "Binh (up)", "Quan ly", "Dem");
+        hienThi();
+        System.out.println("== XOA NV01 ==");
+        xoaTest("NV01");
+        hienThi();
+    }
+
+    void suaTest(String id, String ten, String vaiTro, String ca) {
+        for (NhanVien nv : ds)
+            if (nv.id.equals(id)) {
+                nv.ten = ten;
+                nv.vaiTro = vaiTro;
+                nv.ca = ca;
+                return;
             }
-        }
-        if (nvXoa != null) {
-            danhSachNhanVien.remove(nvXoa);
-            System.out.println("Xoa nhan vien thanh cong!");
-        } else {
-            System.out.println("Khong tim thay nhan vien voi ID nay.");
-        }
+    }
+
+    void xoaTest(String id) {
+        ds.removeIf(nv -> nv.id.equals(id));
     }
 }
-
