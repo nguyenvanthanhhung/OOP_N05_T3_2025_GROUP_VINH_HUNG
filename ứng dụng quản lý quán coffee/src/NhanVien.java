@@ -1,5 +1,8 @@
 public class NhanVien {
-    String id, ten, vaiTro, ca;
+    public String id;
+    public String ten;
+    public String vaiTro;
+    public String ca;
 
     public NhanVien(String id, String ten, String vaiTro, String ca) {
         this.id = id;
@@ -8,7 +11,7 @@ public class NhanVien {
         this.ca = ca;
     }
 
-    void hienThi() {
-        System.out.println(id + " | " + ten + " | " + vaiTro + " | " + ca);
+    public void hienThi() {
+        System.out.println("ID: " + id + ", Ten: " + ten + ", Vai tro: " + vaiTro + ", Ca: " + ca);
     }
 }
