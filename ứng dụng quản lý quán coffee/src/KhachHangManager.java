@@ -17,21 +17,23 @@ public class KhachHangManager {
         }
     }
 
-    public void sua(int id, String tenMoi, String sdtMoi) {
+    public boolean sua(int id, String tenMoi, String sdtMoi) {
         for (KhachHang kh : ds) {
             if (kh.id == id) {
                 kh.ten = tenMoi;
                 kh.soDienThoai = sdtMoi;
-                return;
+                return true;
             }
         }
         System.out.println("Khong tim thay khach hang id: " + id);
+        return false;
     }
 
-    public void xoa(int id) {
+    public boolean xoa(int id) {
         boolean xoa = ds.removeIf(kh -> kh.id == id);
         if (!xoa) {
             System.out.println("Khong tim thay khach hang id: " + id);
         }
+        return xoa;
     }
 }
