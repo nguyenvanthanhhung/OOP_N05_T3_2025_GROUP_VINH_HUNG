@@ -1,20 +1,6 @@
 import java.util.*;
 
 public class DonHangManager {
-    public static class DonHang {
-        public int ma;
-        public String khach;
-        public List<String> hang;
-        public double tong;
-
-        public DonHang(int ma, String khach, List<String> hang, double tong) {
-            this.ma = ma;
-            this.khach = khach;
-            this.hang = hang;
-            this.tong = tong;
-        }
-    }
-
     private List<DonHang> ds = new ArrayList<>();
     private int maTiep = 1;
 
@@ -50,12 +36,5 @@ public class DonHangManager {
 
     public List<DonHang> danhSach() {
         return ds;
-    }
-
-    public void inDanhSach() {
-        for (DonHang d : ds) {
-            System.out.println("Ma: " + d.ma + ", Khach: " + d.khach +
-                               ", Hang: " + d.hang + ", Tong: " + d.tong);
-        }
     }
 }
