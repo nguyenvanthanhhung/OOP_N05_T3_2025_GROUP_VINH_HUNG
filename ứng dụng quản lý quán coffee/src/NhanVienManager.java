@@ -3,31 +3,38 @@ import java.util.*;
 public class NhanVienManager {
     List<NhanVien> ds = new ArrayList<>();
 
-    void them(String id, String ten, String vaiTro, String ca) {
+    public void them(String id, String ten, String vaiTro, String ca) {
         ds.add(new NhanVien(id, ten, vaiTro, ca));
     }
 
-    void hienThi() {
+    public void hienThi() {
         if (ds.isEmpty()) {
             System.out.println("Khong co nhan vien.");
             return;
         }
-        for (NhanVien nv : ds) nv.hienThi();
+        for (NhanVien nv : ds) {
+            nv.hienThi();
+        }
     }
 
-    void sua(String id, String ten, String vaiTro, String ca) {
-        for (NhanVien nv : ds)
+    public boolean sua(String id, String ten, String vaiTro, String ca) {
+        for (NhanVien nv : ds) {
             if (nv.id.equals(id)) {
                 nv.ten = ten;
                 nv.vaiTro = vaiTro;
                 nv.ca = ca;
-                return;
+                return true;
             }
+        }
         System.out.println("Khong tim thay nhan vien: " + id);
+        return false;
     }
 
-    void xoa(String id) {
+    public boolean xoa(String id) {
         boolean xoa = ds.removeIf(nv -> nv.id.equals(id));
-        if (!xoa) System.out.println("Khong tim thay nhan vien: " + id);
+        if (!xoa) {
+            System.out.println("Khong tim thay nhan vien: " + id);
+        }
+        return xoa;
     }
 }
