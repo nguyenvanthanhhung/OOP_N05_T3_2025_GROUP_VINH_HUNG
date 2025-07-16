@@ -1,7 +1,7 @@
 public class KhachHang {
-    int id;
-    String ten;
-    String soDienThoai;
+    public int id;
+    public String ten;
+    public String soDienThoai;
 
     public KhachHang(int id, String ten, String soDienThoai) {
         this.id = id;
@@ -10,6 +10,6 @@ public class KhachHang {
     }
 
     public void hienThi() {
-        System.out.println("Khach hang: " + ten + " - SDT: " + soDienThoai);
+        System.out.println("ID: " + id + ", Ten: " + ten + ", SDT: " + soDienThoai);
     }
 }
