@@ -1,6 +1,6 @@
 # OOP_N05_T3_2025_GROUP_VINH_HUNG
 
-ứng dụng quản lý quán coffee
+ứng dụng quản lý quán giải khát
 
 # Đối Tượng:
 
