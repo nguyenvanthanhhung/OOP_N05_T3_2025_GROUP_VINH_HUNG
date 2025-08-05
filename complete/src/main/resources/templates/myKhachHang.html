@@ -1,0 +1,20 @@
+<html>
+
+
+<body>
+
+    <p> giao dien khach hang</p>
+    [[${myKH.ten}]]
+  
+<p> Danh sach khach hang: </p>
+<div th:each="l : ${mylist}">
+
+    <div >
+        <p th:text="${l.ten}"></p>
+        
+
+    </div>
+</div>
+
+</body>
+</html>
