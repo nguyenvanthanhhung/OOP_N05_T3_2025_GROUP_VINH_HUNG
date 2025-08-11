@@ -55,7 +55,7 @@ ThanhTien:Thành tiền(SoLuong X DonGia)
 3. Nguyễn Lệ Thu
 
 
-
+# Sơ Đồ Chức Năng
 
 ![Mô tả ảnh](https://github.com/nguyenvanthanhhung/OOP_N05_T3_2025_GROUP_VINH_HUNG/blob/main/Untitled1.2.png?raw=true)
 
