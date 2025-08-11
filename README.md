@@ -5,63 +5,63 @@
 # Đối Tượng:
 
 # 1. khách hàng
-.MaKhachHang:Mã khách hàng
+
+MaKhachHang:Mã khách hàng
+
+TenKhachHang:Họ tên KH
+
+# 2. nhân viên
+
+MaNhanVien:	Mã nhân viên
+
+TenNhanVien:Họ tên NV
+
+ChucVu:Chức vụ
+
+# 3. sản phẩm
+
+MaSanPham:Mã sản phẩm
+
+TenSanPham:Tên sản phẩm
+
+LoaiSanPham: Loại hàng
+
+DonGia:Giá bán
+
+# 4. đơn hàng
+
+MaDonHang:Mã đơn hàng
+
+NgayDat:Ngày đặt hàng
+
+MaKhachHang:Mã của khách hàng
+
+MaNhanVien:Mã của nhân viên bán
+
+MaSanPham:Mã sản phẩm
+
+SoLuong:Số lượng bán
+
+DonGia:Giá bán 1 sản phẩm
+
+ThanhTien:Thành tiền(SoLuong X DonGia)
 
 
-nhanvien
+# Thành Viên
+1. Nguyễn Văn Thành Hưng, MSV:24100101
 
-sanpham
+2. Nguyễn Thành Vinh, MSV:24100350
 
-donhang
-
-
-
-khachhang:
-
--thongtin:
-+id
-+ten
-+sodienthoai
+3. Nguyễn Lệ Thu
 
 
 
-nhanvien:
-
--thongtin:
-+id
-+ten
-+vaitro
-+calam
-
-sanpham
-
--thongtin:
-+id
-+ten
-+gia
-+loai
-+tonkho
 
 
-donhang
-
--thongtin:
-+id
-+khachhang
-+sanpham
-+trangthai
-+tongtien
 
 
-thanhtoan
-+donhang
-+tongtien
-+trangthaitahnhtoan
 
-main
-+khachhang
-+nhanvien
-+sanpham
-+donhang
+
+
 
 <img width="590" height="664" alt="Image" src="https://github.com/user-attachments/assets/0cf58614-c4bb-4897-ad7f-f188f61b9e28" />
