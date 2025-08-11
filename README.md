@@ -4,7 +4,7 @@
 
 # Đối Tượng:
 
-khachhang
+1.khachhang
 
 nhanvien
 
@@ -13,8 +13,6 @@ sanpham
 donhang
 
 
-
-# Miêu tả đối tượng
 
 khachhang:
 
