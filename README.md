@@ -5,6 +5,7 @@
 # Đối Tượng:
 
 # 1. khách hàng
+.MaKhachHang:Mã khách hàng
 
 
 nhanvien
