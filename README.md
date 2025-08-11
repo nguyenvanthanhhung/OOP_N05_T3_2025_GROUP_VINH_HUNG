@@ -14,7 +14,7 @@ KhachHangCRUD:
 
 NhanVienCRUD:
 
-![Mô tả ảnh](?raw=true)
+![Mô tả ảnh](https://github.com/nguyenvanthanhhung/OOP_N05_T3_2025_GROUP_VINH_HUNG/blob/main/NhanVienCRUD.png?raw=true)
 # Đối Tượng:
 
 # 1. khách hàng
