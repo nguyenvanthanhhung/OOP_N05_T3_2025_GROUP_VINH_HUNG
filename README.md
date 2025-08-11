@@ -5,11 +5,14 @@
 # Đối Tượng:
 
 khachhang
+
 nhanvien
+
 sanpham
+
 donhang
-thanhtoan
-main
+
+
 
 # Miêu tả đối tượng
 
