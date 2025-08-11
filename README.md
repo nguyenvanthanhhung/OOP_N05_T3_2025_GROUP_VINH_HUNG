@@ -2,6 +2,13 @@
 
 ứng dụng quản lý quán giải khát
 
+# Sơ Đồ Chức Năng
+
+![Mô tả ảnh](https://github.com/nguyenvanthanhhung/OOP_N05_T3_2025_GROUP_VINH_HUNG/blob/main/Untitled1.1%20(1).png?raw=true)
+
+
+
+
 # Đối Tượng:
 
 # 1. khách hàng
@@ -55,9 +62,8 @@ ThanhTien:Thành tiền(SoLuong X DonGia)
 3. Nguyễn Lệ Thu
 
 
-# Sơ Đồ Chức Năng
 
-![Mô tả ảnh](https://github.com/nguyenvanthanhhung/OOP_N05_T3_2025_GROUP_VINH_HUNG/blob/main/Untitled1.1%20(1).png?raw=true)
+
 
 
 
