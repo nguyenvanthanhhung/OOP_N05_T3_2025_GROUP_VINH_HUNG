@@ -19,10 +19,9 @@ NhanVienCRUD:
 SanPhamCRUD:
 
 ![Mô tả ảnh](https://github.com/nguyenvanthanhhung/OOP_N05_T3_2025_GROUP_VINH_HUNG/blob/main/SanPhamCRUD.png?raw=true)
-
 DonHangCRUD:
 
-![Mô tả ảnh](?raw=true)
+![Mô tả ảnh](https://github.com/nguyenvanthanhhung/OOP_N05_T3_2025_GROUP_VINH_HUNG/blob/main/DonHangCRUD.png?raw=true)
 
 
 # Đối Tượng:
