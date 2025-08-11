@@ -10,6 +10,7 @@
 
 KhachHangCRUD:
 
+![Mô tả ảnh](?raw=true)
 
 # Đối Tượng:
 
